@@ -1,0 +1,13 @@
+<div class="container">
+    <form #form="ngForm" (ngSubmit)="In()">
+        <h1>Bienvenido</h1>
+        <input type="text" name="username" placeholder="usuario" [(ngModel)]="user.username" required autocomplete="off"> 
+        <input type="password" name="pass" placeholder="contraseña" [(ngModel)]="user.pass" required autocomplete="off">
+        <input type="submit" value="Ingresar" [disabled]="!form.form.valid">
+    </form>
+    <a [routerLink]="(['/registrar'])" class="register">Registrar</a> 
+</div>
+
+<div class="mensaje" [hidden]="view">
+    <span>{{mensaje}}</span>
+</div>

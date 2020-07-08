@@ -1,0 +1,12 @@
+<div class="container">
+    <form #form="ngForm" (ngSubmit)=save()>
+        <h1>Registrarse</h1>
+        <input type="text" name="username" placeholder="usuario" [(ngModel)]="user.username" required autocomplete="off"> 
+        <input type="password" name="password" placeholder="contraseña"  [(ngModel)]="user.password" required autocomplete="off"> 
+        <input type="submit" value="Registrar" [disabled]="!form.form.valid"  >
+    </form>
+</div>
+
+<div class="mensaje" [hidden]="view" >
+    <span>{{result}}</span>
+</div>
