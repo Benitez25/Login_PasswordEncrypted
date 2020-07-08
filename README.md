@@ -1,5 +1,5 @@
 # Login de farmacia
-### Contraseña con bcrypt y jsonwebtoken para el inicio de sesión   
+## Contraseña con bcrypt y jsonwebtoken para el inicio de sesión   
 **Backend**
 ```
 El backend esta desarrollado con node Js y las siguientes dependencias
